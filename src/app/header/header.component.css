@@ -1,0 +1,10 @@
+.image-size {
+    width: 150px ;
+     height: 70px;
+}
+
+.header-container {
+    /* position:  fixed;
+    top: 0; */
+    background-color: #32CD32;
+}

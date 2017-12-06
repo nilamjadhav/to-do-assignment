@@ -1,0 +1,22 @@
+<div class="row">
+  <table class="table table-bordered">
+    <thead>
+      <tr>
+        <th>Status</th>
+        <th>Title</th>
+        <th>Date</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor ="let list of todoList; let i=index" [ngClass]="{'strike-through':list.status === true}">
+        <!-- <ng-container [ngClass]="{'strike-through':list.status === true}"> -->
+        <td><input type="checkbox" [checked]="list.status === true"></td>
+        <td>{{list.title}}</td>
+        <td>{{list.date}}</td>
+        <td>{{list.desc}}</td>
+        <!-- </ng-container> -->
+      </tr>
+    </tbody>
+  </table>
+</div>
